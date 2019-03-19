@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <title>RETO 2</title>
+</head>
+<body>
+    <h1>BOOTCAMP RETO 2</h1>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio: 1</h2>
+        <div class="result">
+            <p id="result">00</p>
+        </div>
+        <div >
+           <input class="input" type="number" id="num" placeholder="Ingresa una Nota" />
+           <button class="btn" id="add" onclick= "addNumber()" >Agregar Nota</button>
+           <button class="btn2" id="calcular" onclick= "media()" >Calcular</button>
+        </div>
+       
+        <div class="divTabla">
+            <table>
+                <thead id="filaTitulosNotas">
+                    <tr>
+                        <th>Nota</th>
+                        <th>Valor</th>
+                    </tr>
+
+                </thead>
+                <tbody id="filaNotas">
+
+                </tbody>                
+            </table>
+        </div>
+        
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 2</h2>
+        <div class="result">
+            <p id="result2">00</p>
+        </div>
+        <div > 
+            <input class="input" id="masa1" type="number" placeholder="Masa en gramos">
+            <input class="input" id="masa2" type="number" placeholder="Masa en gramos">
+            <input class="input" id="distancia" type="number" placeholder="Distancia en cm">
+        </div>
+        <div>
+            <button class="btn2" id="btnCalcularFuerza" onclick="calcularFuerza()">Calcular</button>
+        </div>
+    </section>
+
+    <section class="containerExample1">
+        <h2>Ejercicio 3</h2>
+        <div class="result">
+            <p id="result3">00</p>
+        </div>
+        <div>
+            <input class="input" type="input" id="masa3" placeholder="Masa en gramos">
+            <button class="btn" onclick="calcularEnergia()" >Calcular</button>
+        </div>
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 4</h2>
+        <div class="result">
+            <p id="result4">00</p>
+        </div>
+        <div>
+            <input class="input"  id="ladoA" type="number">
+            <input class="input"  id="ladoB" type="number">
+            <button class="btn2" onclick="calcularH()">Calcular</button>
+        </div>
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 5</h2>
+        <div class="result">
+            <p id="result5">00</p>
+        </div>
+        <div>
+            <input class="input" id="a" type="number" placeholder="Lado a">
+            <input class="input" id="b" type="number" placeholder="Lado b">
+            <input class="input" id="c" type="number" placeholder="Lado c"><br />
+            <button class="btn2" onclick="calcularArea()">Calcular</button>
+        </div>
+
+    </section>
+    
+    <section class="containerExample1" >
+        <h2>Ejercicio 6</h2>
+        <div class="result">
+            <p id="result6">00</p>
+        </div>
+        <div>
+            <input class="input" id="hora" type="text" placeholder="Digita Hora 13:45">
+            <button class="btn2" onclick="calularHora()">Calcular</button>
+        </div>
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 7</h2>
+        <div class="result">
+            <p id="result7">00</p>
+        </div>
+        <div>
+            <input class="input" id="fecha" type="text" placeholder="Ej: 15, abril 1989">
+            <button class="btn2" onclick="calularFecha()">Convertir</button>
+        </div>
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 8</h2>
+        <div class="result">
+           <p id="result8">00</p>
+        </div>
+        <div>
+            <input class="input" id="numero" type="text" placeholder="Digita numero">
+            <button class="btn2" onclick="convertirNumero()">Convertir</button>
+        </div>
+    </section>
+
+    <section class="containerExample1">
+        <h2>Ejercicio 9</h2>
+        <div>
+            <canvas class="canvas" id="miCanvas">
+            </canvas>
+        </div>
+        <div>
+            <input class="input" id="radio" type="number" placeholder="Digita radio">
+            <button class="btn2" onclick="dibujar()">Convertir</button>
+        </div>
+    </section>
+
+    <section class="containerExample1"  >
+        <h2>Ejercicio 10 leer numeros romanos</h2>
+        <div class="result">
+             <p id="result10">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="siglas" type="text" placeholder="Digita siglas ">
+        </div>
+        <div>
+            <button class="btn2" onclick="convertirDeRomano()">Convertir</button>
+        </div>
+    </section>
+
+    <section class="containerExample1"  >
+        <h2>Ejercicio 11</h2>
+        <div class="result">
+           <p id="result11">00</p>
+        </div>
+        <div>
+            <input class="input" id="inDado" type="text" placeholder="Valor de dado">
+            <button class="btn2" onclick="aproximacion()">Aproximar</button>
+        </div>
+    </section>
+
+    <section class="containerExample1"  >
+        <h2>Ejercicio 12</h2>
+        <div class="result">
+           <p id="result12">00</p>
+        </div>
+        <div>
+            <input class="input" id="dia" type="number" placeholder="Dia">
+            <input class="input" id="mes" type="number" placeholder="Mes">
+            <input class="input" id="anio" type="number" placeholder="Año">
+        </div>
+        <div>
+            <input class="input" id="diaA" type="number" placeholder="Dia Actual">
+            <input class="input" id="mesA" type="number" placeholder="Mes Actual">
+            <input class="input" id="anioA" type="number" placeholder="Año Actual"><br />
+            <button class="btn2" onclick="calcularEdad()">Aproximar</button>
+        </div>
+    </section>
+    
+    <section class="containerExample1"  >
+        <h2>Ejercicio 13</h2>
+        <p>ax + by = c</p>
+        <p>dx + ey = f</p>
+        <div class="result">
+            
+           <p id="result13">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="va" type="number" placeholder="a">
+            <input class="input" id="vb" type="number" placeholder="b">
+            <input class="input" id="vc" type="number" placeholder="c"><br />
+            <input class="input" id="vd" type="number" placeholder="d">
+            <input class="input" id="ve" type="number" placeholder="e">
+            <input class="input" id="vf" type="number" placeholder="f">
+        </div>
+        <div>
+            <button class="btn2" onclick="hallarVariables()">Hallar</button>
+        </div>
+    </section>
+    
+    <section class="containerExample1" >
+        <h2>Ejercicio 14</h2>
+      
+        <div class="result">
+            
+            <p id="result14">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="anioBis" type="number" placeholder="Digita año">
+            
+        </div>
+        <div>
+            <button class="btn2" onclick="calcularAnioBis()">Hallar</button>
+        </div>
+    </section>
+
+    <section class="containerExample1" >
+        <h2>Ejercicio 15</h2>
+        
+        <div class="result">
+            
+            <p id="result15">00</p><br />
+        </div>
+        <div>
+            
+            <input class="input" id="numMes" type="number" placeholder="Digita mes">
+            <input class="input" id="numAnio" type="number" placeholder="Digita año">
+            
+        </div>
+        <div>
+            <button class="btn2" onclick="calcularDias()">Hallar</button>
+        </div>
+    </section>
+
+    <section class="containerExample1"  >
+        <h2>Ejercicio 16</h2>
+        <div class="result">
+            
+            <p id="result16">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="pesetas" type="number" placeholder="Digita numero">
+        </div>
+        <div>
+            <button class="btn2" onclick="calcularDinero()">Calcular</button>
+        </div>
+    </section>
+
+
+    <section class="containerExample1"  >
+        <h2>Ejercicio 17 calcular Salario</h2>
+        <div class="result">
+             <p id="result17">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="horasTrabajdas" type="number" placeholder="Digita Horas ">
+            <input class="input" id="valorHora" type="number" placeholder="Digita valor por hora ">
+        </div>
+        <div>
+            <button class="btn2" onclick="salario()">Calcular</button>
+        </div>
+    </section>
+
+    
+    <section class="containerExample1" >
+        <h2>Ejercicio 18</h2>
+        <div class="result">
+            
+            <p id="result18">00</p><br />
+        </div>
+        <div>
+            <input class="input" id="varNum" type="number" placeholder="Digita numero">
+        </div>
+        <div>
+            <button class="btn2" onclick="calcularSigno()">Calcular</button>
+        </div>
+    </section>
+
+   
+
+
+    
+    
+    <script src="js/index.js"></script>
+    <script src="js/ejercicio2.js"></script>
+    <script src="js/ejercicio3.js"></script>
+    <script src="js/ejercicio4.js"></script>
+    <script src="js/ejercicio5.js"></script>
+    <script src="js/ejercicio6.js"></script>
+    <script src="js/ejercicio7.js"></script>
+    <script src="js/ejercicio8.js"></script>
+    <script src="js/ejercicio9.js"></script>
+    <script src="js/ejercicio11.js"></script>
+    <script src="js/ejercicio12.js"></script>
+    <script src="js/ejercicio13.js"></script>
+    <script src="js/ejercicio14.js"></script>
+    <script src="js/ejercicio15.js"></script>
+    <script src="js/ejercicio18.js"></script>
+    <script src="js/ejercicio16.js"></script>
+    <script src="js/ejercicio17.js"></script>
+    <script src="js/ejercicio10.js"></script>
+    
+</body>
+</html>
